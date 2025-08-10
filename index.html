@@ -4,8 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        h1{
+            text-align: center;
+            font-size: 48px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            -webkit-text-stroke: 3px rgb(0, 0, 0);
+        }
+
+        body{
+            background-color: rgb(158, 255, 190);
+            color: rgb(255, 255, 255);
+            padding: 0;
+            margin: 0;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        #main{
+            
+            width: 80vw;
+            height: 60vh;
+            justify-self: center;
+            border-radius: 50px;
+            transform: rotate(1deg);
+            background: -webkit-gradient(linear,             /* or radial */
+                left top,           /* starting point */
+                right bottom,       /* ending point */
+                from(#00ffaa),      /* start color */
+                to(#d0ff00));
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.452) ;
+            transition: all ease 0.5s;
+        }
+
+        #main:hover{
+            transform: translate(-20px, 20px);
+        }
+
+    </style>
 </head>
 <body>
-    hello
+    <h1>welcome to my website</h1>
+    <div id="main">
+
+    </div>
+    <script scr="js.js"></script>
 </body>
 </html>
