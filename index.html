@@ -14,12 +14,13 @@
         }
 
         body{
-            background-color: rgb(158, 255, 190);
+            background-color: rgb(145, 220, 255);
             color: rgb(255, 255, 255);
             padding: 0;
             margin: 0;
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
             -webkit-text-stroke: 1.25px rgb(0, 0, 0);
+
         }
 
         #main{
@@ -35,25 +36,26 @@
             background: -webkit-gradient(linear,             /* or radial */
                 left top,           /* starting point */
                 right bottom,       /* ending point */
-                from(#00ffaa),      /* start color */
-                to(#d0ff00));
+                from(#72d7ff),      /* start color */
+                to(#ffffff));
             box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.452) ;
             transition: all ease 0.5s;
         }
 
         #main:hover{
-            transform: translate(-20px, 20px);
+            transform: translate(-0px, 10px);
         }
 
         #main > div{
-            background-color: rgb(136, 255, 166);
-            border-radius: 100px;
+            background-color: rgb(208, 244, 255);
+            border-radius: 20px;
             margin: 20px;
             text-align: center;
             font-size: 15px;
             text-decoration: none;
             -webkit-text-stroke: 0px;
             color: black;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.432);
         }
 
         a{
@@ -64,9 +66,10 @@
         #main > div > h1{
             font-size: 20px;
             -webkit-text-stroke: 1px black;
-            color: white;
+            color: rgba(255, 197, 39, 0);
         }
         
+
         
         /* ...existing styles... */
 
@@ -79,12 +82,23 @@
             }
         }
 
+        img{
+            border-radius: 50%;
+            border: 2px solid black;
+        }
+
+        footer{
+            font-weight: 100;
+            text-align: center;
+            margin: 10px 0px 0px 0px;
+        }
+
     </style>
 </head>
 <body>
     <h1>welcome to my website</h1>
     <div id="main">
-        <div>
+        <div class="div1">
             <h1>links</h1>
             <br />
             my github:
@@ -95,10 +109,25 @@
             <br>
             <a href="https://scratch.mit.edu/users/Rongrong15/">scratch</a>
         </div>
-        <div></div>
-        <div></div>
-        <div></div>
+        <div class="div2">
+            <h1>Name</h1>
+            <br>
+            Rongrong Wu
+            <br>
+            picture:
+            <br>
+            <div id="img1">
+            <img src="rr.jpg" height="40">
+            </div>
+        </div>
+        <div class="div3">
+            NULL 
+        </div>
+        <div class="div4">
+            NULL
+        </div>
     </div>
+    <footer>© rongrong wu</footer>
     <script scr="js.js"></script>
 </body>
 </html>
