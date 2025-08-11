@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>My website</title>
     <style>
         h1{
             text-align: center;
             font-size: 48px;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             -webkit-text-stroke: 3px rgb(0, 0, 0);
-            margin: 5px;
+            margin: 2px;
         }
 
         body{
@@ -26,7 +26,7 @@
             display: grid;
             grid-template-columns: 1fr 1fr;
             grid-template-rows: 1fr 1fr;
-            gap: 20px;
+            gap: 0px;
             width: 80vw;
             height: 60vh;
             justify-self: center;
@@ -50,14 +50,33 @@
             border-radius: 100px;
             margin: 20px;
             text-align: center;
-            font-size: 30px;
-            text-decoration: none
+            font-size: 15px;
+            text-decoration: none;
+            -webkit-text-stroke: 0px;
+            color: black;
         }
 
         a{
             text-decoration: underline;
             color: black;
             font-weight: 700;
+        }
+        #main > div > h1{
+            font-size: 20px;
+            -webkit-text-stroke: 1px black;
+            color: white;
+        }
+        
+        
+        /* ...existing styles... */
+
+        @media (min-width: 900px) {
+            #main > div {
+                font-size: 20px;
+            }
+            #main > div > h1 {
+                font-size: 30px;
+            }
         }
 
     </style>
