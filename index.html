@@ -10,6 +10,7 @@
             font-size: 48px;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             -webkit-text-stroke: 3px rgb(0, 0, 0);
+            margin: 5px;
         }
 
         body{
@@ -18,10 +19,14 @@
             padding: 0;
             margin: 0;
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            -webkit-text-stroke: 1.25px rgb(0, 0, 0);
         }
 
         #main{
-            
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            gap: 20px;
             width: 80vw;
             height: 60vh;
             justify-self: center;
@@ -40,12 +45,40 @@
             transform: translate(-20px, 20px);
         }
 
+        #main > div{
+            background-color: rgb(136, 255, 166);
+            border-radius: 100px;
+            margin: 20px;
+            text-align: center;
+            font-size: 30px;
+            text-decoration: none
+        }
+
+        a{
+            text-decoration: underline;
+            color: black;
+            font-weight: 700;
+        }
+
     </style>
 </head>
 <body>
     <h1>welcome to my website</h1>
     <div id="main">
-
+        <div>
+            <h1>links</h1>
+            <br />
+            my github:
+            <br>
+            <a href="https://github.com/rrwu23" target="_blank">github</a>
+            <br>
+            my scratch:
+            <br>
+            <a href="https://scratch.mit.edu/users/Rongrong15/">scratch</a>
+        </div>
+        <div></div>
+        <div></div>
+        <div></div>
     </div>
     <script scr="js.js"></script>
 </body>
